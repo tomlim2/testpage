@@ -1,0 +1,91 @@
+.info-section {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  grid-gap: 1em;
+
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#hero-section div{
+   background-color: red;
+}
+
+.pj-info-pic{
+  overflow: hidden;
+
+}
+
+.pj-info-pic img{
+  height: 100%;
+}
+
+.pj-info-text{
+  padding: 1em;
+}
+
+.pj-info-text div{
+}
+
+.pj-info-text p{
+}
+
+
+
+#project-section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 400px;
+  grid-gap: 1em;
+}
+
+#project-section div{
+
+}
+
+.pj-pic{
+  background: blue;
+}
+
+.pj-pic1{
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.pj-pic2{
+  background-color: yellow;
+  grid-column: 1/2;
+  grid-row: 3/5;
+}
+.pj-pic5, .pj-pic9{
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 400px;
+  grid-gap: 1em;
+  background-color: rgba(0,0,0,0);
+}
+
+.pj-pic5 div{
+  background-color: red;
+}
+
+.pj-pic9 div{
+  background-color: red;
+}
+.pj-pic8{
+  grid-column: 2/3;
+  grid-row: 6/8;
+}
+
+#nextPrev{
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.prevProject{
+  float: left;
+}
+.nextProject{
+  float: right;
+}

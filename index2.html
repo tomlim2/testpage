@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <style media="screen">
+    #portfolio-section{
+      display: grid;
+      grid-template-columns: 30% 70%;
+      /* grid-column-gap: .2em;
+      grid-row-gap:.2em; */
+
+      grid-gap:.2em;
+    }
+
+    #portfolio-section div {
+      background: yellow;
+      padding: 1em;
+    }
+
+    #portfolio-section div:nth-child(odd) {
+      background: purple;
+
+    }
+    </style>
+  </head>
+  <body>
+    <!-- page-warpper -->
+    <div id='page-1' class="">
+      <nav class="navbox">
+        <img src="assets/img/logo.svg" alt="">
+        <div class="menu">
+          <span class="menu-content m-c1 clicked">
+            work
+          </span>
+          <span class="menu-content m-c2">
+            about
+          </span>
+        </div>
+      </nav>
+
+      <div id="page-2" class="">
+        <section id="hero-section" class="hero-image full-screen"></section>
+
+        <div id="page-3" class="">
+          <section id="portfolio-section" class='portfolio'>
+            <div class="">
+              item1
+            </div>
+            <div class="">
+              item2
+            </div>
+            <div class="">
+              item3
+            </div>
+
+          </section>
+        </div>
+
+        <footer>
+          copyright tomlim 2018
+        </footer>
+
+      </div>
+    </div>
+    <!-- end page warpper -->
+  </body>
+</html>

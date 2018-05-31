@@ -1,0 +1,179 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*,*div{
+  box-sizing: border-box;
+}
+
+li{
+  display: block;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: gray;
+}
+
+footer{
+  display: block;
+  background: black;
+  color: white;
+  position: relative;
+  text-align: center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbox{
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+  left: 50%;
+  margin-left: -50vw;
+  background: rgba(20,20,20, 0.2 );
+  z-index: 10;
+}
+
+#logo{
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: auto;
+  top: 10px;
+}
+
+.menu{
+  font-size: 0.8em;
+  position: absolute;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  top: 74px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+
+  text-align: center;
+}
+
+.menu-content{
+}
+.clicked{
+  color: white;
+}
+
+.menu-content:hover{
+  color: white;
+}
+
+.full-screen{
+  width: 100%;
+}
+
+.hero-image{
+  background-image: url(../img/rolling36d.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#page-1{
+  width: 100vw;
+  overflow: hidden;
+}
+
+#page-2{
+  width: 100%;
+  display: block;
+
+  padding-top: 120px;
+}
+
+/* grid starts */
+#page-3{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 1240px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#hero-section{
+  height: 70vh;
+}
+
+#portfolio-section{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-auto-rows: 500px;
+  grid-gap: .2em;
+}
+
+#portfolio-section .set-3col{
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+  grid-gap: .2em;
+}
+
+.item{
+  display: grid;
+  padding: 1em;
+
+  background: #f3f3f3;
+}
+
+.item:hover{
+  background: white;
+}
+
+.item1{
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.item6{
+  grid-column: 2/2;
+  grid-row: 3/5;
+}
+
+.item7{
+  grid-column: 1/3;
+}
+
+.item-pic{
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  display: table;
+}
+
+.item-pic img{
+  height: 100%;
+}
+
+.item .large{
+  height: 863px;
+}
+
+.item .small{
+  height: 360px;
+}
+
+.item-text{
+  position: relative;
+  height: 80px;
+  text-align: center;
+  align-self:flex-end;
+}
